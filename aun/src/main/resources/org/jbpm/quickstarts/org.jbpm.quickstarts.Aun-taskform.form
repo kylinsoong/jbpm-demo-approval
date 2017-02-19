@@ -1,0 +1,10 @@
+
+<form id="527502646">
+<property name="name" value="org.jbpm.quickstarts.Aun-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<dataHolder inputId="" name="#9BCAFA" type="basicType" outId="isL5L6Approval" value="java.lang.Boolean" id="isL5L6Approval"/>
+<dataHolder inputId="" name="#BBBBBB" type="basicType" outId="isLineMgmtApproval" value="java.lang.Boolean" id="isLineMgmtApproval"/>
+<dataHolder inputId="" name="#FF54A7" type="basicType" outId="isTelecommunterApproval" value="java.lang.Boolean" id="isTelecommunterApproval"/>
+<dataHolder inputId="" name="#E9E371" type="basicType" outId="user" value="java.lang.String" id="user"/>
+</form>
