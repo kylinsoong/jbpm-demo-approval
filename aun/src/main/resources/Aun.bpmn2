@@ -57,7 +57,7 @@
       <bpmn2:dataInputAssociation id="DataInputAssociation_1">
         <bpmn2:targetRef>DataInput_1</bpmn2:targetRef>
         <bpmn2:assignment id="Assignment_1">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="FormalExpression_1">Task Name</bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="FormalExpression_1">Open</bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="FormalExpression_2">DataInput_1</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -191,7 +191,7 @@
       <bpmn2:dataInputAssociation id="DataInputAssociation_11">
         <bpmn2:targetRef>DataInput_15</bpmn2:targetRef>
         <bpmn2:assignment id="Assignment_14">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="FormalExpression_30">Task Name</bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="FormalExpression_30">TelecommunterApproval</bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="FormalExpression_31">DataInput_15</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -374,7 +374,7 @@
       <bpmn2:dataInputAssociation id="DataInputAssociation_20">
         <bpmn2:targetRef>DataInput_32</bpmn2:targetRef>
         <bpmn2:assignment id="Assignment_27">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="FormalExpression_61">Task Name</bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="FormalExpression_61">LineMgmtApproval</bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="FormalExpression_62">DataInput_32</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -543,7 +543,7 @@
       <bpmn2:dataInputAssociation id="DataInputAssociation_29">
         <bpmn2:targetRef>DataInput_49</bpmn2:targetRef>
         <bpmn2:assignment id="Assignment_36">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="FormalExpression_83">Task Name</bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="FormalExpression_83">L5L6Approval</bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="FormalExpression_84">DataInput_49</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -608,7 +608,9 @@
       <bpmn2:incoming>SequenceFlow_27</bpmn2:incoming>
       <bpmn2:outgoing>SequenceFlow_26</bpmn2:outgoing>
     </bpmn2:exclusiveGateway>
-    <bpmn2:sequenceFlow id="SequenceFlow_25" tns:priority="1" sourceRef="ExclusiveGateway_4" targetRef="ExclusiveGateway_7"/>
+    <bpmn2:sequenceFlow id="SequenceFlow_25" tns:priority="1" sourceRef="ExclusiveGateway_4" targetRef="ExclusiveGateway_7">
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="FormalExpression_142" language="http://www.java.com/java">return !user.equals(&quot;User2&quot;);</bpmn2:conditionExpression>
+    </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="SequenceFlow_26" tns:priority="1" sourceRef="ExclusiveGateway_7" targetRef="Task_5"/>
     <bpmn2:sequenceFlow id="SequenceFlow_27" tns:priority="1" name="Approval" sourceRef="ExclusiveGateway_5" targetRef="ExclusiveGateway_7">
       <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="FormalExpression_103" language="http://www.java.com/java">return isLineMgmtApproval;</bpmn2:conditionExpression>
@@ -728,7 +730,7 @@
       <bpmn2:dataInputAssociation id="DataInputAssociation_38">
         <bpmn2:targetRef>DataInput_66</bpmn2:targetRef>
         <bpmn2:assignment id="Assignment_49">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="FormalExpression_113">Task Name</bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="FormalExpression_113">HRProcessing</bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="FormalExpression_114">DataInput_66</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
